@@ -1,38 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Moved</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+<html>
+  <head>
+    <title>WebMC</title>
+    <link rel="icon" href="assets/img/webmc.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="manifest" href="assets/meta/manifest.json">
+    <meta name="darkreader-lock">
+    <meta property="og:title" content="WebMC" />
+    <meta property="og:locale" content="en-US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/webmc.png" />
+    <meta property="og:description" content="A browser-based Minecraft launcher." />
+    <meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8, eaglercraft, eaglercraft minecraft, eaglercraft 3kh0, eaglercraft github, eaglercraft singleplayer, eaglercraft hacks, eaglercraft 1.8, eaglercraft server, eaglecraft game, eaglercraft alternative, eaglercraft alt links, eaglercraft asspixel, eaglercraft anarchy server, eaglercraft aeon, eaglercraft asspixel server ip, eaglercraft all links, eaglercraft aeon server, eaglercraft beta, eaglecraft boats, eaglecraft boats for sale, eaglecraft boats for sale bc, eaglecraft bedwars server, eaglecraft boats inc, eaglercraft beta servers, eaglercraft blocked, eaglercraft client, eaglecraft custom boats, eaglecraft campbell river, eaglercraft creative, eaglercraft commands, eaglercraft code, eaglercraft controls, eaglercraft com, eaglercraft download, eaglercraft discord, eaglercraft dupe glitch, eaglercraft download file, eaglercraft download google drive, eaglercraft dmca, eaglercraft deleted, eaglercraft down, eaglercraft embed, eaglercraft epk file download, eaglercraft end of stream, eaglecraft apk download, eaglecraft eagtek, eaglercraft exploit, eaglecraft eggs, eaglercraft epk world file download, eaglercraft file, eaglercraft file download, eaglercraft free, eaglercraft forums, eaglercraft fork, eaglercraft faq, eaglercraft fps, eaglecraft free download, eaglercraft github servers, eaglercraft google drive, eaglercraft github lax1dude, eaglercraft github download, eaglercraft github.io, eaglercraft google sites, minecraft, applet, singleplayer, replit, html5, chromebook, lax1dude, games, eaglercraft singleplayer, eagler, minecraft for free, free minecraft, unblocked games, school games, free games, online games, tortillagames, unblocked games for school, play games at school, school-friendly games, free online games, no blocked games, gaming website, fun games for school, safe games for school, browser games, Eaglercraft, Eaglercraft unblocked, play Eaglercraft, Eaglercraft games, unblocked Eaglercraft games, Minecraft alternatives, Eaglercraft school games, free Eaglercraft, unblocked Minecraft, multiplayer games, Eaglercraft online, free multiplayer games, browser Minecraft, free Eaglercraft server, Eaglercraft mods, gaming at school, unblocked browser games, school-friendly Eaglercraft, fun Eaglercraft for school, best school games, creative games for school, adventure games for school, multiplayer unblocked games, Eaglercraft free online, play Minecraft at school, Eaglercraft worlds, unblocked adventure games, sandbox games, Eaglercraft sandbox, school gaming site, Eaglercraft server list, unblocked survival games, play unblocked games, safe gaming at school, Eaglercraft unblocked Minecraft, Eaglercraft multiplayer, sandbox games for school, Eaglercraft custom servers, unblocked creative games, gaming website for school, fun school gaming, best unblocked games, Eaglercraft download, Eaglercraft setup, Eaglercraft mods download, Eaglercraft survival games, unblocked survival worlds, Eaglercraft gaming tips, play browser games, unblocked fun games, safe online gaming, Eaglercraft world building, free browser Minecraft, multiplayer sandbox games, unblocked browser Minecraft, free to play Eaglercraft, Eaglercraft maps, creative sandbox games, fun gaming website, unblocked multiplayer games, school browser games, Eaglercraft server hosting, fun school-friendly games, school-friendly browser games, free Eaglercraft downloads, Eaglercraft mods guide, unblocked fun at school, Eaglercraft safe play, unblocked school adventures, free Eaglercraft tools, creative Minecraft at school, best browser games, multiplayer unblocked Minecraft, sandbox unblocked games, creative school games, Minecraft browser unblocked, Eaglercraft multiplayer servers, Eaglercraft modpacks, Eaglercraft gameplay, fun sandbox worlds, browser-based Minecraft, Eaglercraft hacks, unblocked school sandbox, Minecraft alternatives unblocked, browser Eaglercraft servers, Eaglercraft worlds download, gaming websites for school, Eaglercraft server play, fun school sandbox games, Eaglercraft school-friendly mods, play school unblocked games, free Minecraft browser games, browser games for school, safe Eaglercraft servers, unblocked gaming platform, Eaglercraft education, Eaglercraft creative mode, Minecraft for school, school game servers, Minecraft unblocked access, browser-based Eaglercraft, school-friendly Eaglercraft downloads, multiplayer adventure games, Eaglercraft for school kids, school Minecraft play, sandbox education games, browser games sandbox, Minecraft Eaglercraft mods, unblocked creative gaming, Eaglercraft play free, safe sandbox games for school, fun multiplayer Eaglercraft, Eaglercraft for classrooms, Eaglercraft online servers, browser-based sandbox, free sandbox multiplayer, browser games Minecraft, safe games online, unblocked mods for school, free games for students, school games Minecraft, Eaglercraft server guides, Minecraft browser access, unblocked school Minecraft servers, free sandbox creativity, Eaglercraft survival guides, Eaglercraft online play, sandbox education tools, free Eaglercraft gaming, creative browser games, Eaglercraft modding, fun Eaglercraft servers, WebMC, yee launcher." />
+    <meta name="RESENT_LATEST_AVAILABLE_VERSION" content="5.1-patch-0">
+    <meta name="RESENT_AVAILABLE_MC_VERSIONS" content="1.8.8">
+    <meta name="RESENT_AVAILABLE_PLATFORMS" content="WASM-GC">
+    <meta name="google-adsense-account" content="ca-pub-6114346129491087">
+    <!-- <script async defer src="api/cors?url=https%3A%2F%2Fpagead2.googlesyndication.com%2Fpagead%2Fjs%2Fadsbygoogle.js%3Fclient%3Dca-pub-6114346129491087" crossorigin="anonymous"></script> -->
+    <!-- <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6114346129491087" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <script type="module">
+      if ('serviceWorker' in navigator) {
+        let swPath = "/assets/js/sw.js";
+        let swScope = "/";
+        if (location.hostname.includes("discordsays.com")) {
+          swPath = `/.proxy${swPath}`;
+          swScope = "/.proxy/";
         }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>This Page Has Moved</h1>
-        <p>The page you are looking for has been moved to a new location. Please update your bookmarks.</p>
-        <p>Click the link below to go to the new page:</p>
-        <p><a href="https://webmc.xyz">Go to the New Page</a></p>
+        navigator.serviceWorker.register(swPath, {
+          scope: swScope
+        }).then((registration) => {
+          console.log('Service Worker registered successfully:', registration);
+          registration.update();
+          registration.addEventListener('statechange', (e) => {
+            if (e.target.state === 'activated') {
+              window.location.reload();
+            }
+          });
+        }).catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+      }
+      const reg = await navigator.serviceWorker.ready
+      reg.update()
+    </script>
+    <div id="loadermain" class="loader webmc"></div>
+    <div class="sidebar">
+      <div class="sidebar-user">
+        <img src="assets/img/webmc.png" draggable="false">
+        <a>WebMC</a>
+      </div>
+      <div class="sidebar-item sidebar-launcher active" data-id="launcher">
+        <img src="assets/img/icons/launcher.png" draggable="false">
+        <div class="text">
+          <a>MINECRAFT:</a>
+          <a>Web Edition</a>
+        </div>
+      </div>
+      <div class="sidebar-item sidebar-changelog" data-id="changelog">
+        <img src="assets/img/icons/changelog.png" draggable="false">
+        <div class="text">
+          <a>Changelog</a>
+        </div>
+      </div>
+      <!-- <div class="sidebar-item sidebar-downloads" data-id="downloads">
+        <img src="assets/img/icons/downloads.png" draggable="false">
+        <div class="text">
+          <a>Downloads</a>
+        </div>
+      </div> -->
+      <div class="sidebar-item sidebar-discord round" data-href="https://discord.gg/zwcJGuABME" data-id="discord">
+        <img src="assets/img/icons/discord.png" draggable="false">
+        <div class="text">
+          <a>Discord</a>
+        </div>
+      </div>
+      <div class="sidebar-avdertisement">
+        <!-- <a class="spnosor" href="https://abrhosting.com/webmc" target="_blank"></a> -->
+        <!-- <ins class="adsbygoogle"
+          data-ad-client="ca-pub-6114346129491087"
+          data-ad-slot="9956320298"
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </ins> -->
+      </div>
+      <div class="sidebar-item sidebar-settings" data-id="settings">
+        <img src="assets/img/icons/settings.png" draggable="false">
+        <a>Settings</a>
+      </div>
+      <a class="version">v</a>
     </div>
-</body>
+    <div class="content">
+      <div class="topbar">
+        <a class="ver">Minecraft: Web Edition</a>
+        <div class="topbar-buttons">
+          <a id="topbar-play" class="active">Play</a>
+          <a id="topbar-installations">Installations</a>
+          <a id="topbar-console">Console</a>
+        </div>
+      </div>
+      <img class="title" src="assets/img/title.png" draggable="false">
+      <!--<iframe class="game_frame" sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-popups"></iframe>-->
+      <div class="bg">
+        <div id="loadergame" class="loader webmc"></div>
+      </div>
+      <div class="dropdown"></div>
+      <div class="bottombar">
+        <div class="dropdown-selector">
+          <img class="dropdown-selector-icon" draggable="false">
+          <div class="version-info">
+            <a id="title"></a>
+            <a id="version"></a>
+          </div>
+          <div class="chevron-down"></div>
+        </div>
+        <button class="game-button play">PLAY</button>
+        <div class="status">
+          <a id="time">0:00:00</a>
+          <a id="playerCount">
+            <span id="count">0</span> Playing Now </a>
+        </div>
+      </div>
+      <div class="section side downloads">
+        <div class="downloads"></div>
+      </div>
+      <div class="section side changelog">
+        <div class="changelog"></div>
+      </div>
+      <div class="section side settings">
+        <h1>Settings</h1>
+      </div>
+      <div class="section top installations">
+        <button class="newInstall">New Installation</button>
+        <form class="installCreation">
+          <h2>New Installation</h2>
+          <input type="text" id="name" placeholder="Installation Name" data-value="
+																		<untitled installation>" required>
+          </input>
+          <input type="text" id="ver" placeholder="Installation Version" data-value="custom" required></input>
+          <input type="text" id="url" placeholder="Installation URL" data-value="https://example.com" required></input>
+          <input type="submit" class="createInstall" value="Create">
+          </button>
+        </form>
+        <ul class="installList"></ul>
+      </div>
+      <div class="section top console empty">
+        <a>No live game detected.</a>
+        <a>Start your game to proceed.</a>
+      </div>
+    </div>
+    <div class="notification-container"></div>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/offlineDownloadBuilder.js"></script>
+    <script src="assets/js/settings.js"></script>
+  </body>
 </html>
